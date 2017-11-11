@@ -1,0 +1,10 @@
+CREATE DATABASE burgers_db;
+use burgers_db;
+
+CREATE TABLE burgers(
+id INT(11) NOT NULL AUTO_INCREMENT ;
+burger_name varchar(50) NOT NULL,
+devoured bool,
+date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+PRIMARY KEY (id)
+);
